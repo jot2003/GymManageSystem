@@ -1,0 +1,122 @@
+.admin-stats {
+  .container {
+    padding: 0 100px;
+  }
+  &-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-container {
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__revenue {
+      width: 45%;
+      background-color: #efecec;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    &__age {
+      width: 45%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #efecec;
+      height: 289px;
+      &--contain {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+      }
+      &--percent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &--title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        p {
+          font-weight: 600;
+        }
+      }
+      .icon {
+        background-color: #9f1616;
+        opacity: 0.2;
+        width: 2%;
+        height: 35px;
+        border-radius: 2px;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  select {
+    background-color: #fff;
+    color: #c21b1b;
+    border: 2px solid #c21b1b;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  select:hover {
+    background-color: #f8d7da;
+    cursor: pointer;
+  }
+  
+  select:focus {
+    background-color: #fff;
+    border-color: #c21b1b;
+  }
+  
+  option {
+    background-color: #fff;
+    color: #c21b1b;
+    font-size: 16px;
+  }
+  
+  option:hover {
+    background-color: #f8d7da;
+  }
+  
+  .export-button {
+    background-color: #c21b1b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #c21b1b;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .export-button:hover {
+    background-color: #a31717;
+  }
+}

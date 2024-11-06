@@ -1,0 +1,233 @@
+.package-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.package-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.package-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 260px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #c21b1b;
+}
+
+.package-price,
+.package-frequency,
+.package-number {
+    color: #737373;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+
+    strong {
+        color: #c21b1b;
+    }
+}
+
+.package-btn {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #c21b1b;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.package-btn:hover {
+    background-color: red;
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-modal .ant-modal-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.payment {
+    &-title {
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #737373;
+    }
+    &-info {
+        background-color: #efecec;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    &-name {
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #c21b1b;
+    }
+    &-price {
+        font-size: 2rem;
+        color: #737373;
+        font-weight: 600;
+        strong {
+            color: red;
+        }
+    }
+    &-methods img {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+// // Style for the modal buttons
+// .ant-modal-footer {
+//     .ant-btn-primary {
+//         background-color: #c21b1b;
+//         border-color: #c21b1b;
+//         color: #fff;
+//         &:hover,
+//         &:focus {
+//             background-color: #fff;
+//             border-color: #c21b1b;
+//             color: #c21b1b;
+//         }
+//     }
+//     .ant-btn {
+//         background-color: #c21b1b;
+//         border-color: #c21b1b;
+//         color: #fff;
+//         &:hover,
+//         &:focus {
+//             background-color: #fff;
+//             border-color: #c21b1b;
+//             color: #c21b1b;
+//         }
+//     }
+// }
+
+:where(.css-dev-only-do-not-override-17seli4).ant-radio-wrapper
+    .ant-radio-checked
+    .ant-radio-inner {
+    border-color: #c21b1b;
+    background-color: #c21b1b;
+}
+
+:where(.css-dev-only-do-not-override-17seli4)
+    .ant-radio-wrapper:hover
+    .ant-radio-inner {
+    border-color: #c21b1b;
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-btn-default {
+    color: #c21b1b;
+    border-color: #c21b1b;
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-btn-default:not(
+        :disabled
+    ):not(.ant-btn-disabled):hover {
+    color: #fff;
+    border-color: #c21b1b;
+    background-color: #c21b1b;
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-btn-primary {
+    background-color: #c21b1b;
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-btn-primary:not(
+        :disabled
+    ):not(.ant-btn-disabled):hover {
+    background-color: #fff;
+    color: #c21b1b;
+    border-color: #c21b1b;
+}
+
+/* Đổi màu border của Select khi hover */
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: #c21b1b !important;
+    box-shadow: 0 0 0 2px rgba(194, 27, 27, 0.1);
+}
+
+/* Đổi màu border của Select khi focus */
+.ant-select:not(.ant-select-disabled):focus .ant-select-selector {
+    border-color: #c21b1b !important;
+    box-shadow: none !important; /* Loại bỏ box-shadow */
+    outline: none !important; /* Loại bỏ outline */
+}
+
+/* Đổi màu border của Select khi được chọn */
+.ant-select-selection-item {
+    border-color: #c21b1b !important;
+}
+
+/* Đổi màu border của Input khi hover hoặc focus */
+.payment-methods .ant-input:hover,
+.payment-methods .ant-input-focused {
+    border-color: #c21b1b !important;
+    box-shadow: none !important; /* Loại bỏ box-shadow */
+    outline: none !important; /* Loại bỏ outline */
+}
+
+/* Đảm bảo rằng màu border của Select khi hover hoặc focus sẽ ghi đè lên màu border của Input */
+.payment-methods .ant-select:hover .ant-select-selector,
+.payment-methods .ant-select-focused .ant-select-selector {
+    border-color: #c21b1b !important;
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-input-outlined:focus {
+    border-color: #c21b1b !important;
+    box-shadow: 0 0 0 2px rgba(194, 27, 27, 0.1);
+}
+
+.package-act {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    button {
+        width: 45%;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 6px;
+        border: 1px solid #c21b1b;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5714285714;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .package-act-remove {
+        color: #c21b1b;
+        background-color: #fff;
+        &:hover {
+            color: #fff;
+            background-color: #c21b1b;
+        }
+    }
+    .package-act-update {
+        color: #fff;
+        background-color: #c21b1b;
+        &:hover {
+            color: #c21b1b;
+            background-color: #fff;
+        }
+    }
+}

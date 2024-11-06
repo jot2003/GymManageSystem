@@ -1,0 +1,85 @@
+@use "../abstracts";
+
+%flexItemsCenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    position: fixed;
+    // display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    z-index: 10;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        margin: 0 5px;
+    }
+
+    li a {
+        position: relative;
+        color: #fff;
+        padding: 5px 5px;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        &::after,
+        &.active::after {
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color: red;
+            bottom: -5px;
+            left: 5px;
+            transition: width 0.3s ease;
+            z-index: 100;
+        }
+        &:hover::after,
+        &.active::after {
+            width: calc(100% - 20px);
+        }
+    }
+}
+
+.top-bar {
+    @extend %flexItemsCenter;
+}
+
+.btn-login {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #000;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.btn-login:hover {
+    background-color: red;
+}
+
+.header.active-profile {
+    li a {
+        color: #000;
+    }
+    .logo {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(16%)
+            hue-rotate(322deg) brightness(94%) contrast(105%);
+    }
+}
+
+.nav-act {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
